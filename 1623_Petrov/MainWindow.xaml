@@ -6,15 +6,15 @@
         xmlns:local="clr-namespace:_1623_Petrov"
         mc:Ignorable="d"
         Title="Первое графическое приложение Петров Н.С. " Height="450" Width="800">
-    <Grid>
+    <Grid Height="434" VerticalAlignment="Bottom">
         <Grid.RowDefinitions>
             <RowDefinition Height="45*"/>
             <RowDefinition Height="200*"/>
             <RowDefinition Height="45*"/>
         </Grid.RowDefinitions>
-        <Frame Content=""  Name="MainFrame" Height="300" VerticalAlignment="Center" HorizontalAlignment="Right" Grid.Row="1" Width="800"/>
-        <Button Content="Назад" Background="Salmon" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Grid.Row="0" ToolTip="Кликните для возврата на предыдущую страницу" FontFamily="Arial" FontSize="10" Foreground="FloralWhite" Width="45" Height="34"/>
-        <TextBlock HorizontalAlignment="Center" Margin="3,17,0,0" Grid.Row="2" TextWrapping="Wrap" Background="Plum" FontFamily="Arial" FontSize="20"  Foreground="Khaki" Text="Разработчик: ОЗИСИП 1623, Петров никита Сергеевич" VerticalAlignment="Top"/>
+        <Frame Content="" Source="Pages/auth.xaml"   Name="MainFrame" Height="300" VerticalAlignment="Center" HorizontalAlignment="Right" Grid.Row="1" Width="800" Navigated="MainFrame_OnNavigated"/>
+        <Button Name ="ButtonBack"  Content="Назад" Background="Salmon" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Grid.Row="0" ToolTip="Кликните для возврата на предыдущую страницу" FontFamily="Arial" FontSize="10" Foreground="FloralWhite" Width="45" Height="34" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Right" Margin="0,17,140,0" Grid.Row="2" TextWrapping="Wrap" Background="Green" FontFamily="Arial" FontSize="20"  Foreground="Khaki" Text="Разработчик: ОЗИСИП 1623, Петров Никита Сергеевич" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

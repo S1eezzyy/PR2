@@ -16,13 +16,28 @@ using System.Windows.Shapes;
 namespace _1623_Petrov.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для POS1.xaml
+    /// Логика взаимодействия для Page1.xaml
     /// </summary>
-    public partial class POS1 : Page
+    public partial class Page1 : Page
     {
-        public POS1()
+        public Page1()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Auth());
+        }
+
+        private void txtRol_TextChanged(object sender, TextChangedEventArgs e)
+        {
+        
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

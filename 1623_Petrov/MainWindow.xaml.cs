@@ -1,10 +1,12 @@
-﻿using System;
+﻿using _1623_Petrov.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -23,6 +25,25 @@ namespace _1623_Petrov
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void MainFrame_OnNavigated(object sender, NavigationEventArgs e)
+        {
+            if (!(e.Content is Page1 page)) return;
+            this.Title = $"ProjectByPetrov-{page.Title}";
+
+            if (page is Pages.Auth)
+                ButtonBack.Visibility = Visibility.Hidden;
+            else
+                ButtonBack.Visibility = Visibility.Visible;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (MainFrame.CanGoBack)
+            {
+                MainFrame.GoBack();
+            }
         }
     }
 }
