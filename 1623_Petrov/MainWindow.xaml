@@ -6,15 +6,20 @@
         xmlns:local="clr-namespace:_1623_Petrov"
         mc:Ignorable="d"
         Title="Первое графическое приложение Петров Н.С. " Height="450" Width="800">
-    <Grid Height="434" VerticalAlignment="Bottom">
+    <Grid Height="400" VerticalAlignment="Bottom">
         <Grid.RowDefinitions>
-            <RowDefinition Height="45*"/>
-            <RowDefinition Height="200*"/>
-            <RowDefinition Height="45*"/>
+            <RowDefinition Height="31*"/>
+            <RowDefinition Height="153*"/>
+            <RowDefinition Height="16*"/>
         </Grid.RowDefinitions>
-        <Frame Content="" Source="Pages/auth.xaml"   Name="MainFrame" Height="300" VerticalAlignment="Center" HorizontalAlignment="Right" Grid.Row="1" Width="800" Navigated="MainFrame_OnNavigated"/>
-        <Button Name ="ButtonBack"  Content="Назад" Background="Salmon" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Grid.Row="0" ToolTip="Кликните для возврата на предыдущую страницу" FontFamily="Arial" FontSize="10" Foreground="FloralWhite" Width="45" Height="34" Click="Button_Click"/>
-        <TextBlock HorizontalAlignment="Right" Margin="0,17,140,0" Grid.Row="2" TextWrapping="Wrap" Background="Green" FontFamily="Arial" FontSize="20"  Foreground="Khaki" Text="Разработчик: ОЗИСИП 1623, Петров Никита Сергеевич" VerticalAlignment="Top"/>
+        <Frame Content="" Source="Pages/auth.xaml"   Name="MainFrame" Height="300" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1" Width="800" Navigated="MainFrame_OnNavigated"/>
+        <Button Name ="ButtonBack"  Content="Назад" Background="Salmon" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,5,0,0" Grid.Row="0" ToolTip="Кликните для возврата на предыдущую страницу" FontFamily="Arial" FontSize="10" Foreground="FloralWhite" Width="45" Height="34" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="144,0,0,0" Grid.Row="2" TextWrapping="Wrap" Background="Green" FontFamily="Arial" FontSize="20"  Foreground="Khaki" Text="Разработчик: ОЗИСИП 1623, Петров Никита Сергеевич" VerticalAlignment="Center" Height="24" Width="516"/>
+        <Button Name="USERS" Width="120" Height="36" Grid.Column="0" Margin="675,0,0,15" Background="Salmon" Foreground="FloralWhite" VerticalAlignment="Center" HorizontalAlignment="Left" Click="ButtonUserManag_OnClick">
+            <TextBlock Text="Управление пользователями" FontSize="14" FontFamily="arial" ToolTip="Кликните для входа" Width="120" Height="35" TextWrapping="Wrap" TextAlignment="Center"/>
+        </Button>
+        <Button Name="Partners" Content="Бизнес-Партнёры" FontSize="14" FontFamily="arial" ToolTip="Кликните для входа" Width="120" Height="35" Grid.Row="0" Margin="338,5,0,0" Background="Salmon" Foreground="FloralWhite" 
+        VerticalAlignment="Top" HorizontalAlignment="Left" Click="ButtonBussPart_OnClick"/>
 
     </Grid>
 </Window>

@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace _1623_Petrov.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для POS2.xaml
+    /// Логика взаимодействия для Partners.xaml
     /// </summary>
-    public partial class POS2 : Page
+    public partial class Partners : Page
     {
-        public POS2()
+        public Partners()
         {
             InitializeComponent();
         }

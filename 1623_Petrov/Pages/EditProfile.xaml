@@ -1,0 +1,99 @@
+﻿<Page x:Class="_1623_Petrov.Pages.EditProfile"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:_1623_Petrov.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="420" d:DesignWidth="800"
+      Title="EditProfile">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="200*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="42*"/>
+            <RowDefinition Height="42*"/>
+            <RowDefinition Height="42*"/>
+            <RowDefinition Height="42*"/>
+            <RowDefinition Height="42*"/>
+            <RowDefinition Height="42*"/>
+            <RowDefinition Height="42*"/>
+            <RowDefinition Height="50*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Редактирование профиля" HorizontalAlignment="Center" FontSize="20" Foreground="Black" FontFamily="Arial" VerticalAlignment="Center" 
+                   Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="4" Height="35"/>
+        <Label Content="Email:" FontSize="18" FontFamily="arial" Grid.Row="1" Grid.Column="0" Foreground="Black" HorizontalAlignment="Right" Width="160" 
+               Height="30" VerticalAlignment="Center" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+        <TextBox FontSize="18" FontFamily="arial" ToolTip="Введите почту" Name="txtLog1" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" Width="184" 
+                 Height="26" VerticalAlignment="Center" Background="Transparent"/>
+        <TextBlock Text="example@gmail.com" FontSize="18" FontFamily="arial" Foreground="Gray" Name="txtHintLog1" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" Width="174" 
+                 Height="20" VerticalAlignment="Center" Margin="5,0,0,0"/>
+        <Label Content="Имя:" FontSize="18" FontFamily="arial" Grid.Row="2" Grid.Column="0" Foreground="Black" HorizontalAlignment="Right" Width="160" 
+               Height="30" VerticalAlignment="Center" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+        <TextBox FontSize="18" FontFamily="arial" ToolTip="Введите Имя" Name="txtLog2" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" Width="160" 
+                 Height="25" VerticalAlignment="Center" Background="Transparent"/>
+        <TextBlock Text="Имя" FontSize="18" FontFamily="arial" Foreground="Gray" Name="txtHintLog2" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" Width="150" 
+                 Height="20" VerticalAlignment="Center" Margin="5"/>
+        <Label Content="Фамилия:" FontSize="18" FontFamily="arial" Grid.Row="3" Grid.Column="0" Foreground="Black" HorizontalAlignment="Right" Width="160" 
+               Height="30" VerticalAlignment="Center" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+        <TextBox FontSize="18" FontFamily="arial" ToolTip="Введите фамилию" Name="txtLog3" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" Width="160" 
+                 Height="25" VerticalAlignment="Center" Background="Transparent"/>
+        <TextBlock Text="Фамилия" FontSize="18" FontFamily="arial" Foreground="Gray" Name="txtHintLog3" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" Width="150" 
+                 Height="20" VerticalAlignment="Center" Margin="5"/>
+        <Label Content="Пол:" FontSize="18" FontFamily="arial" Grid.Row="4" Grid.Column="0" Foreground="Black" HorizontalAlignment="Right" Width="160" 
+               Height="30" VerticalAlignment="Center" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+        <ComboBox Name ="ComBoxSex" FontSize="18" FontFamily="arial" ToolTip="Выберите пол" Grid.Column="1" Grid.Row="4" HorizontalAlignment="Left" Width="160" 
+                  Background="Transparent" Height="25" VerticalAlignment="Center" Foreground="Black">
+            <ComboBoxItem>Мужской</ComboBoxItem>
+            <ComboBoxItem>Женский</ComboBoxItem>
+        </ComboBox>
+        <Label Content="Дата рождения:" FontSize="18" FontFamily="arial" Grid.Row="5" Grid.Column="0" Foreground="Black" HorizontalAlignment="Right" Width="160" 
+               Height="40" VerticalAlignment="Center" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+        <DatePicker Name="DatePicker" IsDropDownOpen="True" SelectedDateFormat="Short" FontSize="18" FontFamily="arial" ToolTip="Выберите дату" Grid.Column="1" Grid.Row="5" HorizontalAlignment="Left" Width="160" 
+                  Background="Transparent" Height="25" VerticalAlignment="Center" Foreground="Black" DisplayDateStart="01.01.1940" DisplayDateEnd="12.31.2023" DisplayDate="06.29.1995"/>
+        <Label Content="Страна:" FontSize="18" FontFamily="arial" Grid.Row="6" Grid.Column="0" Foreground="Black" HorizontalAlignment="Right" Width="160" 
+               Height="30" VerticalAlignment="Center" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+        <ComboBox Name ="ComBoxCountry" FontSize="18" FontFamily="arial" ToolTip="Выберите страну" Grid.Column="1" Grid.Row="6" HorizontalAlignment="Left" Width="160" 
+                  Background="Transparent" Height="25" VerticalAlignment="Center" Foreground="Black">
+            <ComboBoxItem>Россия</ComboBoxItem>
+            <ComboBoxItem>Казахстан</ComboBoxItem>
+            <ComboBoxItem>США</ComboBoxItem>
+            <ComboBoxItem>Китай</ComboBoxItem>
+            <ComboBoxItem>Великобритания</ComboBoxItem>
+            <ComboBoxItem>Германия</ComboBoxItem>
+            <ComboBoxItem>Франция</ComboBoxItem>
+            <ComboBoxItem>испания</ComboBoxItem>
+        </ComboBox>
+        <Label Content="Смена пароля" FontSize="18" FontFamily="arial" Grid.Row="1" Grid.Column="2" Foreground="Black" HorizontalAlignment="Center" Width="300" 
+               Height="35" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.ColumnSpan="2"/>
+        <TextBlock TextWrapping="WrapWithOverflow" FontSize="16" FontFamily="arial" Grid.Row="2" Grid.Column="2" Foreground="Gray" HorizontalAlignment="Center" Width="300" 
+               Height="35" VerticalAlignment="Center" Grid.ColumnSpan="2" TextAlignment="Center">
+               Оставьте эти поля, незаполненными, если вы не хотите изменять пароль.
+        </TextBlock>
+        <Label Content="Пароль:" FontSize="18" FontFamily="arial" Grid.Row="3" Grid.Column="2" Foreground="Black" HorizontalAlignment="Right" Width="160" 
+               Height="30" VerticalAlignment="Center" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+        <PasswordBox ToolTip="Введите пароль" FontSize="18" FontFamily="arial" Name="pswPar" Grid.Row="3" Grid.Column="3" HorizontalAlignment="Left" Width="160" 
+                     Background="Transparent" Height="25" VerticalAlignment="center"/>
+        <TextBlock Text="Пароль" FontSize="18" FontFamily="arial" Foreground="Gray" Name="txtHintLog4" Grid.Row="3" Grid.Column="4" HorizontalAlignment="Left" Width="155" 
+                 Height="20" VerticalAlignment="Center" Margin="5"/>
+        <Label Content="Подтверждение:" FontSize="18" FontFamily="arial" Grid.Row="4" Grid.Column="2" Foreground="Black" HorizontalAlignment="Right" Width="160" 
+               Height="30" VerticalAlignment="Center" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+        <PasswordBox ToolTip="Введите пароль" FontSize="18" FontFamily="arial" Name="pswPar1" Grid.Row="4" Grid.Column="3" HorizontalAlignment="Left" Width="184" 
+                     Background="Transparent" Height="26" VerticalAlignment="Center"/>
+        <TextBlock Text="Подтвердите пароль" FontSize="18" FontFamily="arial" Foreground="Gray" Name="txtHintLog5" Grid.Row="4" Grid.Column="3" HorizontalAlignment="Left" Width="172" 
+                 Height="20" VerticalAlignment="Center" Margin="5,0,0,0"/>
+
+
+
+        <Button Content="Сохранить" FontSize="18" FontFamily="arial" ToolTip="Кликните чтобы сохранить" Grid.Row="7" Grid.Column="1" HorizontalAlignment="Right" Width="160" 
+          Height="45" VerticalAlignment="Center" Margin="0,0,30,0"/>
+        <Button Content="Отмена" FontSize="18" FontFamily="arial" ToolTip="Кликните чтобы отменить" Grid.Row="7" Grid.Column="2" HorizontalAlignment="Center" Width="160" 
+                Height="45" VerticalAlignment="Center"/>
+    </Grid>
+</Page>
+

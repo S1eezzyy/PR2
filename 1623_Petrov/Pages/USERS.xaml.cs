@@ -16,23 +16,13 @@ using System.Windows.Shapes;
 namespace _1623_Petrov.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для Auth.xaml
+    /// Логика взаимодействия для USERS.xaml
     /// </summary>
-    public partial class Auth : Page
+    public partial class USERS : Page
     {
-        public Auth()
+        public USERS()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Page1());
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new EditProfile());
         }
     }
 }

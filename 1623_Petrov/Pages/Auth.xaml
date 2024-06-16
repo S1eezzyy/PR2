@@ -27,7 +27,7 @@
         <TextBlock Text="Логин или почта"  Foreground="Gray" Name="txtHintLog" Grid.Row="0" Grid.Column="1" Margin="5,10,280,37"  />
         <PasswordBox ToolTip="Введите пароль" x:Name="pswPar" Grid.Column="1" Margin="0,10,280,38" Grid.Row="1" Background="Transparent"  />
         <TextBlock Text="Пароль" Foreground="Gray" Name="txtHintPas" Grid.Column="1" Grid.Row="1" Margin="5,10,280,38"  />
-        <Button Content="Вход" ToolTip="Нажмите для входа" Grid.Row="2" Grid.ColumnSpan="2"/>
+        <Button Content="Вход" ToolTip="Нажмите для входа" Grid.Row="2" Grid.ColumnSpan="2" Click="Button_Click_1"/>
         <Button ToolTip="Нажмите для регистрации" Content="Регистрация" Grid.Row="3" Grid.ColumnSpan="2" Click="Button_Click" />
 
     </Grid>

@@ -27,6 +27,10 @@ namespace _1623_Petrov
             InitializeComponent();
         }
 
+        private void ButtonUserManag_OnClick(object sender, RoutedEventArgs e)
+        {
+            MainFrame.NavigationService.Navigate(new USERS());
+        }
         private void MainFrame_OnNavigated(object sender, NavigationEventArgs e)
         {
             if (!(e.Content is Page1 page)) return;
@@ -44,6 +48,11 @@ namespace _1623_Petrov
             {
                 MainFrame.GoBack();
             }
+        }
+
+        private void ButtonBussPart_OnClick(object sender, RoutedEventArgs e)
+        {
+            MainFrame.NavigationService.Navigate(new Partners());
         }
     }
 }

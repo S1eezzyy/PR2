@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:_1623_Petrov.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="400" d:DesignWidth="800"
       Title="Регистрация">
 
     <Grid>
@@ -28,13 +28,17 @@
         <Label Content=" Введите ФИО" Grid.Row="4" FontSize="15" Grid.Column="0" HorizontalAlignment="Right" Width="109" Height="44" VerticalAlignment="Top" Margin="0,20,0,0" />
         <Button Content="Отмена" ToolTip="Нажмите для отмены" Grid.Row="5" Width="108" Height="20" HorizontalAlignment="Center" Margin="270,20,0,0" VerticalAlignment="Top" Click="Button_Click"  />
         <TextBox ToolTip="Введите логин" x:Name="txtLog" Grid.Row="0" Grid.Column="1" Margin="10,25,280,5"  Background="Transparent"   />
+        <TextBlock Text="Логин "  Foreground="Gray" Name="txtHintLog" Grid.Row="0" Grid.Column="1" Margin="15,25,280,5"  />
         <PasswordBox ToolTip="Введите пароль" x:Name="pswPar" Grid.Column="1" Margin="10,25,280,5" Grid.Row="1" Background="Transparent"  />
+        <TextBlock Text="Пароль" Foreground="Gray" Name="txtHintPas" Grid.Column="1" Grid.Row="1" Margin="15,25,280,5"  />
         <PasswordBox ToolTip="Подтвердите пароль" x:Name="psw" Grid.Column="1" Margin="10,25,280,5" Grid.Row="2" Background="Transparent"  />
+        <TextBlock Text="Пароль" Foreground="Gray" Name="txtPas" Grid.Column="1" Grid.Row="2" Margin="15,25,280,5"  />
         <ComboBox Name ="ComBox1" Margin="0,15,0,0" FontSize="13" FontFamily="arial" ToolTip="Выберите роль" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left" Width="125" Background="Transparent" 
           Height="30" VerticalAlignment="Center">
             <TextBlock Text="Администратор" Foreground="Black"/>
             <TextBlock Text="Пользователь" Foreground="Black"/>
         </ComboBox>
+        <TextBlock Text="ФИО" Foreground="Gray" Name="txtFIO" Grid.Column="1" Grid.Row="4" Margin="15,25,280,5"  />
         <TextBox ToolTip="Введите ФИО" x:Name="txtName" Grid.Row="4" Grid.Column="1" Margin="10,25,280,5" Background="Transparent" />
         <Button Content="Регистрация" ToolTip="Нажмите для регистрации" Grid.Row="5" Grid.Column="1" Width="108" Height="20" HorizontalAlignment="Right" Margin="0,20,280,0" VerticalAlignment="Top"  />
 
